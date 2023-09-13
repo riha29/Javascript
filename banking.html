@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking site</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center mt-8">
+        Let's get some
+        <span class="font-semibold text-purple-600"> Money!!</span>
+      </h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+      <!-- Banalnce and transaction -->
+      <section class="mt-8">
+        <div class="grid grid-cols-3 gap-4 text-white">
+          <div class="bg-blue-300 rounded p-8">
+            <h3 class="text-2xl">Deposit</h3>
+            <h4 class="text-4xl">$000</h4>
+          </div>
+          <div class="bg-green-300 rounded p-8">
+            <h3 class="text-2xl">Withdraw</h3>
+            <h4 class="text-4xl">$000</h4>
+          </div>
+          <div class="bg-yellow-300 rounded p-8">
+            <h3 class="text-2xl">Balance</h3>
+            <h4 class="text-4xl">$1240</h4>
+          </div>
+        </div>
+      </section>
+      <!-- Deposite and Withdraw -->
+      <section class="mt-8">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-red-100 p-8 rounded">
+            <h3 class="text-2xl">Please Deposit</h3>
+            <div>
+              <input
+                id="deposite-input"
+                class="border-2 block border-gray-400 rounded w-3/4 mb-4 px-2"
+                type="text"
+                placeholder="Dollar you want to deposite"
+              />
+              <button
+                id="deposite-button"
+                class="bg-yellow-600 font-medium px-4 py-2 text-white rounded"
+              >
+                Deposit
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-purple-100 p-8 rounded">
+            <h3 class="text-2xl">Please Withdraw</h3>
+            <div>
+              <input
+                id="withdraw-input"
+                class="border-2 block border-gray-400 rounded w-3/4 mb-4 px-2"
+                type="text"
+                placeholder="Dollar you want to withdraw"
+              />
+              <button
+                id="withdraw-button"
+                class="bg-yellow-600 font-medium px-4 py-2 text-white rounded"
+              >
+                Withdraw
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
